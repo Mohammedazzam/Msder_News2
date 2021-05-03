@@ -24,12 +24,14 @@ $(function(){
                 });
             }
             if($(window).scrollTop() < 20){
-                $('.circle').css({
-                    display: 'block'
-                });
-                $('.logo .for-fixed').css({
-                    display: 'none'
-                });
+                if($( window ).width() > 768){
+                    $('.circle').css({
+                        display: 'block'
+                    });
+                    $('.logo .for-fixed').css({
+                        display: 'none'
+                    });
+                }
                 if ($(window).width() > 768){
                     $('.nav-container .navbar').css({
                         marginTop: '35px'
